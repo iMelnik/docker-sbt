@@ -2,10 +2,10 @@
 # SBT image based on Oracle JRE 8
 #
 
-FROM 1science/java:oracle-jre-8
+FROM anapsix/alpine-java:8_server-jre
 MAINTAINER 1science Devops Team <devops@1science.org>
 
-ENV SBT_VERSION 0.13.12
+ENV SBT_VERSION 0.13.13
 ENV SBT_HOME /usr/local/sbt
 ENV PATH ${PATH}:${SBT_HOME}/bin
 
